@@ -1,0 +1,4 @@
+HoI4 Achievement Checker
+Hearts of Iron IV の実績達成状況を確認するためのツールです。
+Steam API を利用して、達成済みの実績と未達成の実績を一覧表示します。
+CSV ファイルを読み込むことで、日本語名や難易度、Wiki の補足情報などを表示できます。
