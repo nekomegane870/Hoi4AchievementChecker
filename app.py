@@ -517,8 +517,8 @@ def load_csv_data(file_path: Path) -> dict:
     if not file_path.exists():
         return result
     try:
-        # Try cp932 first as it's common for Japanese Excel exports
-        with open(file_path, encoding="cp932", errors="replace") as f:
+        # Reading as utf-8-sig to handle Japanese characters correctly
+        with open(file_path, encoding="utf-8-sig", errors="replace") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 # Use .strip() and .lower() for robust matching
